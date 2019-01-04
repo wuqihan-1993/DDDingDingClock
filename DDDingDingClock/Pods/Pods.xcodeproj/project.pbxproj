@@ -1,0 +1,1148 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E3277638B1287D8FDD06E1765D69C1 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A0B3DB9317AE7A8A56F1384EDE4BA6 /* ConstraintOffsetTarget.swift */; };
+		0CD5DFC9A6557E94662541D1E1FBC143 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41106ED8B37B0C795EA91A8157BAAF96 /* ConstraintLayoutSupportDSL.swift */; };
+		0E83F1019122A5595AAC254E3CE3D64F /* Pods-DDDingDingClockUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C97319754719769EAD21C663FD366DE6 /* Pods-DDDingDingClockUITests-dummy.m */; };
+		11249590E5D527FA7F1E474508BB31AD /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893882A3DB8EF16B1FB8D090ECAAC7AD /* Typealiases.swift */; };
+		196D2BB14B34747AC6F8834D62761579 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D025BB0D8F0EAF6B72FE0EDE66F9BD9 /* ConstraintPriorityTarget.swift */; };
+		1F6BA0D15C1B1AA8FD2F83FA1D884750 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB77D073641191B9ADCE2402313F2DB /* ConstraintMakerExtendable.swift */; };
+		2495A082FCECF65817CA4C8C03E11107 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C860024B0016BB9351472C3C5783E7D6 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		253661D512C1EFFC61A09020D34926F0 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607D29231C1C1F9DE388CA1126401674 /* ConstraintItem.swift */; };
+		2737081CBFD7E191357B9490B2F73290 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112DF508037D044B3E5E72B4925291C8 /* ConstraintView.swift */; };
+		2B6B6C3F149FFC07E2829FECE9895E8B /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA4B5E7B8AED9C25205616DA4D00B6 /* ConstraintDSL.swift */; };
+		36149F760AFD5DF0A0EBCE1028CEF62D /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDD52DE7BC4BF47235F7CF2DEE88A0 /* ConstraintConstantTarget.swift */; };
+		41820009F834EC6F25087C785F388784 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC9963163C5CD74EF18AE17A898BAF /* ConstraintLayoutGuide.swift */; };
+		463A98C299C7C9A2D251FE5620346622 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A22B578CCDF4C4039823B727AAAFE0 /* Constraint.swift */; };
+		474A56243273D2673A8852D57597FAF6 /* Pods-DDDingDingClock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF9A4527CE4A695504AF32F0C0EBE0 /* Pods-DDDingDingClock-dummy.m */; };
+		482E94719618F107B0A262AB158A6905 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80CFCEB38CA238FC99BAF998719BFD /* ConstraintMakerEditable.swift */; };
+		4C735DEE2B120E3E21ADB600AC6FC635 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FBED8AD2AE7A8F543C7E4C9A8C0AA0 /* ConstraintRelatableTarget.swift */; };
+		5564CAB5FDD84748FB72784DA36EA9DD /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D449F68D847FC0427C51F968FC94D24 /* ConstraintRelation.swift */; };
+		58C4DE7556E37002B96AAF57DC4B8442 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B62FBE98AEDA78945F71B983AD9BE1D7 /* SnapKit-dummy.m */; };
+		5A7F6E891CE95753500D4B626B53937D /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2893DBF745F52413722490CCCB81A /* ConstraintViewDSL.swift */; };
+		5B7E6CD7C17F2559346214CF3EEA90B4 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578798E5BFEE1C2A099A7999DAAC1271 /* ConstraintInsetTarget.swift */; };
+		5FE160405F4E38E391FC7C17BA8B8B22 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D9B249FE8E57591BDD32B1D1C5481B /* ConstraintMakerFinalizable.swift */; };
+		61CAAC1B2C55405298A704A9ED1F9962 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40CA15011B867399477EAEF1904C91 /* ConstraintConfig.swift */; };
+		63F1E6205C029908DB4037856A5DFAA5 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945DC4910753AD7A95A9F58E72760E28 /* ConstraintDescription.swift */; };
+		66B1D0328093823CC255251D64EA06F6 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE893A40E5162C7473C3FF4E972AF5B /* ConstraintLayoutSupport.swift */; };
+		6B72A0E5D9A526E30DA16DC141BCF454 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91136EEFE81B5A2035D1A5675A9B3C2 /* ConstraintMakerPriortizable.swift */; };
+		73E61DCAA72609D7926E6226BBD24930 /* Pods-DDDingDingClockTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E5C6CC1999F7818CD882AFA07EFD9 /* Pods-DDDingDingClockTests-dummy.m */; };
+		785913F26C29D2712CE020F741D2FC06 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBC258C2C94DC5E58C2F2DEA92C109 /* Debugging.swift */; };
+		7D1D5AD9E259115DC67B1D6E96434B6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		7E65738DD5AD4C0C3CEE450919FD2C20 /* Pods-DDDingDingClock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C7F3204E83E2FCE7639AAB81C6B012 /* Pods-DDDingDingClock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82512D78CAA07D677B23C7A62F6FD1D8 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED225D96E45943DD7107E675945D6B8 /* ConstraintMultiplierTarget.swift */; };
+		8B5C6E3349863E46EB03BC442862ED65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		93BA01C7EC15A8AB868302BD69907F92 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6E1A0FD2C9C3D0CE0C30F6F29E08E /* LayoutConstraintItem.swift */; };
+		991F6B895C063348329EEA1516B7717D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		992C8F73659069E11013D03CFB3EC7E5 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16132E410829BAE3E83BD11601C7D12 /* ConstraintMaker.swift */; };
+		A131BA97527BD97D472B48D2CC0C513A /* Pods-DDDingDingClockUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7419663ECF5B2557DA8D87D994EC47A4 /* Pods-DDDingDingClockUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DC5D58578F3EF7F4A20906FA28E071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		B6E373A61B6D7C404DD0543883D03A95 /* Pods-DDDingDingClockTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B64FAD22CBC28F9662D403490762F0 /* Pods-DDDingDingClockTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7679B128D28D59B32370F98596380CB /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5392B1ACCA67367DC1531B027115A68C /* ConstraintInsets.swift */; };
+		C44D51783CFA133C9F07840C6DFC58BC /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32F334C14BB1E7D54F0CE711F9AC152 /* UILayoutSupport+Extensions.swift */; };
+		C72A146A34ADCCA37C6E286B87B559CC /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74897C6965996A9DB9F045CC0E316808 /* ConstraintLayoutGuideDSL.swift */; };
+		C80EA83E3C3171693BA2ED6B19A6E875 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCD91E63EFEDA981C27CB67CE7E3CD4 /* ConstraintAttributes.swift */; };
+		D6F8F7F2BA4FD138386ACBA33F5966E5 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE0A978B01A7FF8D0E68B2C18E629D /* ConstraintView+Extensions.swift */; };
+		DFEF6FD8F2FBDF88DDFF0E91291F5210 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3424FC10AE3B96DCEF281C08516EFB /* LayoutConstraint.swift */; };
+		E2DC582811DC4CFFD963659FD4175114 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998881931527D1BADDE3B8F614AFBC3B /* ConstraintLayoutGuide+Extensions.swift */; };
+		FD3F660966064754BC409BEF4AEDE4F3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46CE0EF662A0647894C093EEC83FC8 /* ConstraintPriority.swift */; };
+		FE4E6B242BE92A6F235A7DB36C70074A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DD8DAE0C3D145830F706040CB983D /* ConstraintMakerRelatable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E8DB8E8263FDF1C430384A9626CC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6187E568DEA469FD47AA529243B7FF53;
+			remoteInfo = SnapKit;
+		};
+		4F48D6772CDDFF675910F789947C9E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C46DB50072B07EE514C48A94038503B;
+			remoteInfo = "Pods-DDDingDingClock";
+		};
+		C443ACE203CA5E39397CD9E5651FDD7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C46DB50072B07EE514C48A94038503B;
+			remoteInfo = "Pods-DDDingDingClock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		069B84E6075D5C75E6F86A3AA3C2A6FA /* Pods-DDDingDingClockUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDDingDingClockUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0912EA13E1F162C922576DD79C6459BD /* Pods-DDDingDingClock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDDingDingClock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C44A495F7E784F19892B0CFF5173A5A /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "RongCloudIM/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		112DF508037D044B3E5E72B4925291C8 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		16A22B578CCDF4C4039823B727AAAFE0 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		179FAAE77BFFF773C6BA0528E40C28E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D8894A0D5B2FBB09F53923EBCEA89D /* Pods-DDDingDingClockTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDDingDingClockTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		180E2DE733841C88F660A812178BEB66 /* Pods-DDDingDingClock-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDDingDingClock-resources.sh"; sourceTree = "<group>"; };
+		181A8C430E73274C52111FF2F02CA0DA /* Pods-DDDingDingClockTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDDingDingClockTests.modulemap"; sourceTree = "<group>"; };
+		1D025BB0D8F0EAF6B72FE0EDE66F9BD9 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		23F2893DBF745F52413722490CCCB81A /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		24C656E79085C85E6A8EE366720A93C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCD91E63EFEDA981C27CB67CE7E3CD4 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		2D449F68D847FC0427C51F968FC94D24 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		32B65D63D69BE2CFE96591C3E0373CD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41106ED8B37B0C795EA91A8157BAAF96 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		41174AD2BC0CF226F39807C9CC330560 /* Pods-DDDingDingClock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDDingDingClock-acknowledgements.plist"; sourceTree = "<group>"; };
+		47B2BC05909DC33BB488E28F89B88D6F /* Pods-DDDingDingClockUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDDingDingClockUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		49B64FAD22CBC28F9662D403490762F0 /* Pods-DDDingDingClockTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDDingDingClockTests-umbrella.h"; sourceTree = "<group>"; };
+		4E40CA15011B867399477EAEF1904C91 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		4ED225D96E45943DD7107E675945D6B8 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		4FEBC258C2C94DC5E58C2F2DEA92C109 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		51AA1B9DBCE01657430937B28867C619 /* Pods_DDDingDingClockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DDDingDingClockUITests.framework; path = "Pods-DDDingDingClockUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5392B1ACCA67367DC1531B027115A68C /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		53AE0A978B01A7FF8D0E68B2C18E629D /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		5671D5CE0C691B93E35312379CF9CC9F /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		578798E5BFEE1C2A099A7999DAAC1271 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		5DEE46C365163D2E0FA38CDCC7D09053 /* Pods-DDDingDingClockTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDDingDingClockTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EFEF9001FFF8CC26C035B0B46F75B20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607D29231C1C1F9DE388CA1126401674 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		658A401A2EE4965FE55F0DB5EDF5D936 /* Pods-DDDingDingClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDDingDingClock.debug.xcconfig"; sourceTree = "<group>"; };
+		694A484C7F05A4A3A321A5E625027A54 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		6A46CE0EF662A0647894C093EEC83FC8 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		6B3424FC10AE3B96DCEF281C08516EFB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		6EB92F559B5B3488B5756F8B3CD7CCA5 /* Pods-DDDingDingClockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDDingDingClockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7419663ECF5B2557DA8D87D994EC47A4 /* Pods-DDDingDingClockUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDDingDingClockUITests-umbrella.h"; sourceTree = "<group>"; };
+		74897C6965996A9DB9F045CC0E316808 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		7589C5CA16D4B77EFB8DAA50AF10EBCF /* Pods_DDDingDingClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DDDingDingClock.framework; path = "Pods-DDDingDingClock.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8DD8DAE0C3D145830F706040CB983D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		81D8C7564A2D0231BBFE0EDC234E2910 /* RCConfig.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = RCConfig.plist; path = RongCloudIM/RCConfig.plist; sourceTree = "<group>"; };
+		893882A3DB8EF16B1FB8D090ECAAC7AD /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		92DA4B5E7B8AED9C25205616DA4D00B6 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E2222D88E8891EDF5731BC3EE3BE9B /* Pods-DDDingDingClockUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDDingDingClockUITests-resources.sh"; sourceTree = "<group>"; };
+		945DC4910753AD7A95A9F58E72760E28 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		96FBED8AD2AE7A8F543C7E4C9A8C0AA0 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		998881931527D1BADDE3B8F614AFBC3B /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		A05C0577E1E075498596AFB20A29865B /* Pods-DDDingDingClockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDDingDingClockUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A18E9273A285B40AAFD8B59BF237C5DC /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMLib.framework; path = RongCloudIM/RongIMLib.framework; sourceTree = "<group>"; };
+		A3DDD52DE7BC4BF47235F7CF2DEE88A0 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		A98E5C6CC1999F7818CD882AFA07EFD9 /* Pods-DDDingDingClockTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDDingDingClockTests-dummy.m"; sourceTree = "<group>"; };
+		B4B625C51D9859FF46C035F17FDB1DDD /* Pods-DDDingDingClockUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDDingDingClockUITests.modulemap"; sourceTree = "<group>"; };
+		B62FBE98AEDA78945F71B983AD9BE1D7 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		B91136EEFE81B5A2035D1A5675A9B3C2 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		BB80CFCEB38CA238FC99BAF998719BFD /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		BC668C3E2EED9B4E4F626577285E4237 /* Pods-DDDingDingClockTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDDingDingClockTests-frameworks.sh"; sourceTree = "<group>"; };
+		C3A0B3DB9317AE7A8A56F1384EDE4BA6 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		C716DC04FB03BFA8395B00FD11A1F328 /* Pods-DDDingDingClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDDingDingClock.release.xcconfig"; sourceTree = "<group>"; };
+		C860024B0016BB9351472C3C5783E7D6 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		C97319754719769EAD21C663FD366DE6 /* Pods-DDDingDingClockUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDDingDingClockUITests-dummy.m"; sourceTree = "<group>"; };
+		CBB77D073641191B9ADCE2402313F2DB /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		CFDF98C666E50D98D62801FAD2D7711D /* Pods-DDDingDingClock-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDDingDingClock-frameworks.sh"; sourceTree = "<group>"; };
+		D2B6E1A0FD2C9C3D0CE0C30F6F29E08E /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7BC9963163C5CD74EF18AE17A898BAF /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		DAE8C75BBD90FD1BF2AEEC529553FAA9 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		DCE893A40E5162C7473C3FF4E972AF5B /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		DD06792C443FA13EC500EF22152FD75E /* Pods-DDDingDingClockTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDDingDingClockTests-resources.sh"; sourceTree = "<group>"; };
+		E16132E410829BAE3E83BD11601C7D12 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		E32F334C14BB1E7D54F0CE711F9AC152 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		E57B95C08FD748162A2D3D6E1318A892 /* Pods-DDDingDingClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDDingDingClockTests.release.xcconfig"; sourceTree = "<group>"; };
+		E761B9A7A74BF09B600AE86EF346584F /* Pods-DDDingDingClockUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDDingDingClockUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E9934860CE400B1A298B5F14E6192E98 /* Pods-DDDingDingClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDDingDingClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3EF9A4527CE4A695504AF32F0C0EBE0 /* Pods-DDDingDingClock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDDingDingClock-dummy.m"; sourceTree = "<group>"; };
+		F4D9B249FE8E57591BDD32B1D1C5481B /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F5D8E5F2754CE1C85025073D616B808A /* Pods-DDDingDingClock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDDingDingClock.modulemap"; sourceTree = "<group>"; };
+		F7C7F3204E83E2FCE7639AAB81C6B012 /* Pods-DDDingDingClock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDDingDingClock-umbrella.h"; sourceTree = "<group>"; };
+		F905EAD8F2F6752CD3594C793C3239D2 /* Pods_DDDingDingClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DDDingDingClockTests.framework; path = "Pods-DDDingDingClockTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96F35515E414192823BF1728C6ACA0C /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C8CC577B63D646D6A9FCDE9310E81E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DC5D58578F3EF7F4A20906FA28E071 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD74A76C64F897B5A99864F7BF4BCC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F6B895C063348329EEA1516B7717D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6780D5EF9C5AFC6241FA1A1A959622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1D5AD9E259115DC67B1D6E96434B6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8F4CB89BC95A2F3A6F195BBF411A067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5C6E3349863E46EB03BC442862ED65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0006FD4E651CE0552C87B656673BCEBD /* Pods-DDDingDingClock */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEF9001FFF8CC26C035B0B46F75B20 /* Info.plist */,
+				F5D8E5F2754CE1C85025073D616B808A /* Pods-DDDingDingClock.modulemap */,
+				0912EA13E1F162C922576DD79C6459BD /* Pods-DDDingDingClock-acknowledgements.markdown */,
+				41174AD2BC0CF226F39807C9CC330560 /* Pods-DDDingDingClock-acknowledgements.plist */,
+				F3EF9A4527CE4A695504AF32F0C0EBE0 /* Pods-DDDingDingClock-dummy.m */,
+				CFDF98C666E50D98D62801FAD2D7711D /* Pods-DDDingDingClock-frameworks.sh */,
+				180E2DE733841C88F660A812178BEB66 /* Pods-DDDingDingClock-resources.sh */,
+				F7C7F3204E83E2FCE7639AAB81C6B012 /* Pods-DDDingDingClock-umbrella.h */,
+				658A401A2EE4965FE55F0DB5EDF5D936 /* Pods-DDDingDingClock.debug.xcconfig */,
+				C716DC04FB03BFA8395B00FD11A1F328 /* Pods-DDDingDingClock.release.xcconfig */,
+			);
+			name = "Pods-DDDingDingClock";
+			path = "Target Support Files/Pods-DDDingDingClock";
+			sourceTree = "<group>";
+		};
+		00BAAF97F68BB124537F365FDC1A5FDD /* Pods-DDDingDingClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				24C656E79085C85E6A8EE366720A93C5 /* Info.plist */,
+				181A8C430E73274C52111FF2F02CA0DA /* Pods-DDDingDingClockTests.modulemap */,
+				5DEE46C365163D2E0FA38CDCC7D09053 /* Pods-DDDingDingClockTests-acknowledgements.markdown */,
+				17D8894A0D5B2FBB09F53923EBCEA89D /* Pods-DDDingDingClockTests-acknowledgements.plist */,
+				A98E5C6CC1999F7818CD882AFA07EFD9 /* Pods-DDDingDingClockTests-dummy.m */,
+				BC668C3E2EED9B4E4F626577285E4237 /* Pods-DDDingDingClockTests-frameworks.sh */,
+				DD06792C443FA13EC500EF22152FD75E /* Pods-DDDingDingClockTests-resources.sh */,
+				49B64FAD22CBC28F9662D403490762F0 /* Pods-DDDingDingClockTests-umbrella.h */,
+				E9934860CE400B1A298B5F14E6192E98 /* Pods-DDDingDingClockTests.debug.xcconfig */,
+				E57B95C08FD748162A2D3D6E1318A892 /* Pods-DDDingDingClockTests.release.xcconfig */,
+			);
+			name = "Pods-DDDingDingClockTests";
+			path = "Target Support Files/Pods-DDDingDingClockTests";
+			sourceTree = "<group>";
+		};
+		0754C3BBC12F095E34E63FC191FDE590 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50A7353776A57627F32D4FEF2D13124A /* RongCloudIM */,
+				0BE36790F75E7B3C7E71249C2E159CE7 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0BE36790F75E7B3C7E71249C2E159CE7 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				16A22B578CCDF4C4039823B727AAAFE0 /* Constraint.swift */,
+				2BCD91E63EFEDA981C27CB67CE7E3CD4 /* ConstraintAttributes.swift */,
+				4E40CA15011B867399477EAEF1904C91 /* ConstraintConfig.swift */,
+				A3DDD52DE7BC4BF47235F7CF2DEE88A0 /* ConstraintConstantTarget.swift */,
+				945DC4910753AD7A95A9F58E72760E28 /* ConstraintDescription.swift */,
+				92DA4B5E7B8AED9C25205616DA4D00B6 /* ConstraintDSL.swift */,
+				5392B1ACCA67367DC1531B027115A68C /* ConstraintInsets.swift */,
+				578798E5BFEE1C2A099A7999DAAC1271 /* ConstraintInsetTarget.swift */,
+				607D29231C1C1F9DE388CA1126401674 /* ConstraintItem.swift */,
+				D7BC9963163C5CD74EF18AE17A898BAF /* ConstraintLayoutGuide.swift */,
+				998881931527D1BADDE3B8F614AFBC3B /* ConstraintLayoutGuide+Extensions.swift */,
+				74897C6965996A9DB9F045CC0E316808 /* ConstraintLayoutGuideDSL.swift */,
+				DCE893A40E5162C7473C3FF4E972AF5B /* ConstraintLayoutSupport.swift */,
+				41106ED8B37B0C795EA91A8157BAAF96 /* ConstraintLayoutSupportDSL.swift */,
+				E16132E410829BAE3E83BD11601C7D12 /* ConstraintMaker.swift */,
+				BB80CFCEB38CA238FC99BAF998719BFD /* ConstraintMakerEditable.swift */,
+				CBB77D073641191B9ADCE2402313F2DB /* ConstraintMakerExtendable.swift */,
+				F4D9B249FE8E57591BDD32B1D1C5481B /* ConstraintMakerFinalizable.swift */,
+				B91136EEFE81B5A2035D1A5675A9B3C2 /* ConstraintMakerPriortizable.swift */,
+				7B8DD8DAE0C3D145830F706040CB983D /* ConstraintMakerRelatable.swift */,
+				4ED225D96E45943DD7107E675945D6B8 /* ConstraintMultiplierTarget.swift */,
+				C3A0B3DB9317AE7A8A56F1384EDE4BA6 /* ConstraintOffsetTarget.swift */,
+				6A46CE0EF662A0647894C093EEC83FC8 /* ConstraintPriority.swift */,
+				1D025BB0D8F0EAF6B72FE0EDE66F9BD9 /* ConstraintPriorityTarget.swift */,
+				96FBED8AD2AE7A8F543C7E4C9A8C0AA0 /* ConstraintRelatableTarget.swift */,
+				2D449F68D847FC0427C51F968FC94D24 /* ConstraintRelation.swift */,
+				112DF508037D044B3E5E72B4925291C8 /* ConstraintView.swift */,
+				53AE0A978B01A7FF8D0E68B2C18E629D /* ConstraintView+Extensions.swift */,
+				23F2893DBF745F52413722490CCCB81A /* ConstraintViewDSL.swift */,
+				4FEBC258C2C94DC5E58C2F2DEA92C109 /* Debugging.swift */,
+				6B3424FC10AE3B96DCEF281C08516EFB /* LayoutConstraint.swift */,
+				D2B6E1A0FD2C9C3D0CE0C30F6F29E08E /* LayoutConstraintItem.swift */,
+				893882A3DB8EF16B1FB8D090ECAAC7AD /* Typealiases.swift */,
+				E32F334C14BB1E7D54F0CE711F9AC152 /* UILayoutSupport+Extensions.swift */,
+				89F0983A8EA79E376BBD8B59C65DAA49 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		402255F8AD6244DE9F5A78F924F675C6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0006FD4E651CE0552C87B656673BCEBD /* Pods-DDDingDingClock */,
+				00BAAF97F68BB124537F365FDC1A5FDD /* Pods-DDDingDingClockTests */,
+				A094F9C4A91F4E541A261DE462786E37 /* Pods-DDDingDingClockUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		50A7353776A57627F32D4FEF2D13124A /* RongCloudIM */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A294F5D06001B1B311C5BE8101302 /* IMLib */,
+			);
+			name = RongCloudIM;
+			path = RongCloudIM;
+			sourceTree = "<group>";
+		};
+		5DE1F1C47F48512DF8C15E1B53890161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C44A495F7E784F19892B0CFF5173A5A /* libopencore-amrnb.a */,
+				A18E9273A285B40AAFD8B59BF237C5DC /* RongIMLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BD116E11E15E63C9286533493E31D36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81D8C7564A2D0231BBFE0EDC234E2910 /* RCConfig.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D0A294F5D06001B1B311C5BE8101302 /* IMLib */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1F1C47F48512DF8C15E1B53890161 /* Frameworks */,
+				6BD116E11E15E63C9286533493E31D36 /* Resources */,
+			);
+			name = IMLib;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0754C3BBC12F095E34E63FC191FDE590 /* Pods */,
+				A9B22DEECCF5379775826A9E9CCEB539 /* Products */,
+				402255F8AD6244DE9F5A78F924F675C6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89F0983A8EA79E376BBD8B59C65DAA49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				179FAAE77BFFF773C6BA0528E40C28E0 /* Info.plist */,
+				DAE8C75BBD90FD1BF2AEEC529553FAA9 /* SnapKit.modulemap */,
+				694A484C7F05A4A3A321A5E625027A54 /* SnapKit.xcconfig */,
+				B62FBE98AEDA78945F71B983AD9BE1D7 /* SnapKit-dummy.m */,
+				5671D5CE0C691B93E35312379CF9CC9F /* SnapKit-prefix.pch */,
+				C860024B0016BB9351472C3C5783E7D6 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		A094F9C4A91F4E541A261DE462786E37 /* Pods-DDDingDingClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32B65D63D69BE2CFE96591C3E0373CD3 /* Info.plist */,
+				B4B625C51D9859FF46C035F17FDB1DDD /* Pods-DDDingDingClockUITests.modulemap */,
+				069B84E6075D5C75E6F86A3AA3C2A6FA /* Pods-DDDingDingClockUITests-acknowledgements.markdown */,
+				47B2BC05909DC33BB488E28F89B88D6F /* Pods-DDDingDingClockUITests-acknowledgements.plist */,
+				C97319754719769EAD21C663FD366DE6 /* Pods-DDDingDingClockUITests-dummy.m */,
+				E761B9A7A74BF09B600AE86EF346584F /* Pods-DDDingDingClockUITests-frameworks.sh */,
+				93E2222D88E8891EDF5731BC3EE3BE9B /* Pods-DDDingDingClockUITests-resources.sh */,
+				7419663ECF5B2557DA8D87D994EC47A4 /* Pods-DDDingDingClockUITests-umbrella.h */,
+				6EB92F559B5B3488B5756F8B3CD7CCA5 /* Pods-DDDingDingClockUITests.debug.xcconfig */,
+				A05C0577E1E075498596AFB20A29865B /* Pods-DDDingDingClockUITests.release.xcconfig */,
+			);
+			name = "Pods-DDDingDingClockUITests";
+			path = "Target Support Files/Pods-DDDingDingClockUITests";
+			sourceTree = "<group>";
+		};
+		A9B22DEECCF5379775826A9E9CCEB539 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7589C5CA16D4B77EFB8DAA50AF10EBCF /* Pods_DDDingDingClock.framework */,
+				F905EAD8F2F6752CD3594C793C3239D2 /* Pods_DDDingDingClockTests.framework */,
+				51AA1B9DBCE01657430937B28867C619 /* Pods_DDDingDingClockUITests.framework */,
+				F96F35515E414192823BF1728C6ACA0C /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15DC51E2EE7780B3F217253C0EF504BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A131BA97527BD97D472B48D2CC0C513A /* Pods-DDDingDingClockUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228F3E3F46DB1AD96FC04FA7317FE507 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E65738DD5AD4C0C3CEE450919FD2C20 /* Pods-DDDingDingClock-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C630C9CBE0D2A7D75E51D9733DDE9A19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2495A082FCECF65817CA4C8C03E11107 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAE53BBDCADD3B15B09CC3392BDC972 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E373A61B6D7C404DD0543883D03A95 /* Pods-DDDingDingClockTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C46DB50072B07EE514C48A94038503B /* Pods-DDDingDingClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38C360F98F4AAAB77413D51CA66F2A63 /* Build configuration list for PBXNativeTarget "Pods-DDDingDingClock" */;
+			buildPhases = (
+				228F3E3F46DB1AD96FC04FA7317FE507 /* Headers */,
+				C7B22078FE6BDB6DB81C27BAAFCA483A /* Sources */,
+				1CD74A76C64F897B5A99864F7BF4BCC5 /* Frameworks */,
+				F1E3BA2FFD2AAD8833C8A3E8018B47CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C59EEBBB8D9CACF5E9AD27A805483CC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-DDDingDingClock";
+			productName = "Pods-DDDingDingClock";
+			productReference = 7589C5CA16D4B77EFB8DAA50AF10EBCF /* Pods_DDDingDingClock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6187E568DEA469FD47AA529243B7FF53 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4BFFCF84E7D5BCD8E8F0F1BD095406 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				C630C9CBE0D2A7D75E51D9733DDE9A19 /* Headers */,
+				2F1758525AF9D587EBB956845BB2F61A /* Sources */,
+				F8F4CB89BC95A2F3A6F195BBF411A067 /* Frameworks */,
+				D64F9A4428B292F05E7FC2729D36D870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = F96F35515E414192823BF1728C6ACA0C /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		875DDC6AD6D50553E024936CC66B3D6B /* Pods-DDDingDingClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809048F622BB1C1FD0268B618A1E2266 /* Build configuration list for PBXNativeTarget "Pods-DDDingDingClockTests" */;
+			buildPhases = (
+				EBAE53BBDCADD3B15B09CC3392BDC972 /* Headers */,
+				C4EF4258D7BEE70890BFF9409A411B9D /* Sources */,
+				08C8CC577B63D646D6A9FCDE9310E81E /* Frameworks */,
+				5A80ADE93AF312A65207ACCE8E429C1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCD8EBD87CB40E1B7838F7F2AE772C97 /* PBXTargetDependency */,
+			);
+			name = "Pods-DDDingDingClockTests";
+			productName = "Pods-DDDingDingClockTests";
+			productReference = F905EAD8F2F6752CD3594C793C3239D2 /* Pods_DDDingDingClockTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		898EF0F5A4AB55372BA29FAE1376904B /* Pods-DDDingDingClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A398EC67D1103D73E5F15677416ED2A3 /* Build configuration list for PBXNativeTarget "Pods-DDDingDingClockUITests" */;
+			buildPhases = (
+				15DC51E2EE7780B3F217253C0EF504BE /* Headers */,
+				C2A7F39D77CC85A2C9578350ECEDD206 /* Sources */,
+				EE6780D5EF9C5AFC6241FA1A1A959622 /* Frameworks */,
+				83CA09CA5576EAAE19A5525FCDB5F9D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A2A73FE9474187DBB1EF649D7A1497 /* PBXTargetDependency */,
+			);
+			name = "Pods-DDDingDingClockUITests";
+			productName = "Pods-DDDingDingClockUITests";
+			productReference = 51AA1B9DBCE01657430937B28867C619 /* Pods_DDDingDingClockUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A9B22DEECCF5379775826A9E9CCEB539 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C46DB50072B07EE514C48A94038503B /* Pods-DDDingDingClock */,
+				875DDC6AD6D50553E024936CC66B3D6B /* Pods-DDDingDingClockTests */,
+				898EF0F5A4AB55372BA29FAE1376904B /* Pods-DDDingDingClockUITests */,
+				6187E568DEA469FD47AA529243B7FF53 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A80ADE93AF312A65207ACCE8E429C1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CA09CA5576EAAE19A5525FCDB5F9D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64F9A4428B292F05E7FC2729D36D870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E3BA2FFD2AAD8833C8A3E8018B47CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F1758525AF9D587EBB956845BB2F61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463A98C299C7C9A2D251FE5620346622 /* Constraint.swift in Sources */,
+				C80EA83E3C3171693BA2ED6B19A6E875 /* ConstraintAttributes.swift in Sources */,
+				61CAAC1B2C55405298A704A9ED1F9962 /* ConstraintConfig.swift in Sources */,
+				36149F760AFD5DF0A0EBCE1028CEF62D /* ConstraintConstantTarget.swift in Sources */,
+				63F1E6205C029908DB4037856A5DFAA5 /* ConstraintDescription.swift in Sources */,
+				2B6B6C3F149FFC07E2829FECE9895E8B /* ConstraintDSL.swift in Sources */,
+				B7679B128D28D59B32370F98596380CB /* ConstraintInsets.swift in Sources */,
+				5B7E6CD7C17F2559346214CF3EEA90B4 /* ConstraintInsetTarget.swift in Sources */,
+				253661D512C1EFFC61A09020D34926F0 /* ConstraintItem.swift in Sources */,
+				E2DC582811DC4CFFD963659FD4175114 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				41820009F834EC6F25087C785F388784 /* ConstraintLayoutGuide.swift in Sources */,
+				C72A146A34ADCCA37C6E286B87B559CC /* ConstraintLayoutGuideDSL.swift in Sources */,
+				66B1D0328093823CC255251D64EA06F6 /* ConstraintLayoutSupport.swift in Sources */,
+				0CD5DFC9A6557E94662541D1E1FBC143 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				992C8F73659069E11013D03CFB3EC7E5 /* ConstraintMaker.swift in Sources */,
+				482E94719618F107B0A262AB158A6905 /* ConstraintMakerEditable.swift in Sources */,
+				1F6BA0D15C1B1AA8FD2F83FA1D884750 /* ConstraintMakerExtendable.swift in Sources */,
+				5FE160405F4E38E391FC7C17BA8B8B22 /* ConstraintMakerFinalizable.swift in Sources */,
+				6B72A0E5D9A526E30DA16DC141BCF454 /* ConstraintMakerPriortizable.swift in Sources */,
+				FE4E6B242BE92A6F235A7DB36C70074A /* ConstraintMakerRelatable.swift in Sources */,
+				82512D78CAA07D677B23C7A62F6FD1D8 /* ConstraintMultiplierTarget.swift in Sources */,
+				03E3277638B1287D8FDD06E1765D69C1 /* ConstraintOffsetTarget.swift in Sources */,
+				FD3F660966064754BC409BEF4AEDE4F3 /* ConstraintPriority.swift in Sources */,
+				196D2BB14B34747AC6F8834D62761579 /* ConstraintPriorityTarget.swift in Sources */,
+				4C735DEE2B120E3E21ADB600AC6FC635 /* ConstraintRelatableTarget.swift in Sources */,
+				5564CAB5FDD84748FB72784DA36EA9DD /* ConstraintRelation.swift in Sources */,
+				D6F8F7F2BA4FD138386ACBA33F5966E5 /* ConstraintView+Extensions.swift in Sources */,
+				2737081CBFD7E191357B9490B2F73290 /* ConstraintView.swift in Sources */,
+				5A7F6E891CE95753500D4B626B53937D /* ConstraintViewDSL.swift in Sources */,
+				785913F26C29D2712CE020F741D2FC06 /* Debugging.swift in Sources */,
+				DFEF6FD8F2FBDF88DDFF0E91291F5210 /* LayoutConstraint.swift in Sources */,
+				93BA01C7EC15A8AB868302BD69907F92 /* LayoutConstraintItem.swift in Sources */,
+				58C4DE7556E37002B96AAF57DC4B8442 /* SnapKit-dummy.m in Sources */,
+				11249590E5D527FA7F1E474508BB31AD /* Typealiases.swift in Sources */,
+				C44D51783CFA133C9F07840C6DFC58BC /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A7F39D77CC85A2C9578350ECEDD206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E83F1019122A5595AAC254E3CE3D64F /* Pods-DDDingDingClockUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EF4258D7BEE70890BFF9409A411B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73E61DCAA72609D7926E6226BBD24930 /* Pods-DDDingDingClockTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B22078FE6BDB6DB81C27BAAFCA483A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474A56243273D2673A8852D57597FAF6 /* Pods-DDDingDingClock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55A2A73FE9474187DBB1EF649D7A1497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DDDingDingClock";
+			target = 5C46DB50072B07EE514C48A94038503B /* Pods-DDDingDingClock */;
+			targetProxy = C443ACE203CA5E39397CD9E5651FDD7B /* PBXContainerItemProxy */;
+		};
+		C59EEBBB8D9CACF5E9AD27A805483CC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 6187E568DEA469FD47AA529243B7FF53 /* SnapKit */;
+			targetProxy = 15E8DB8E8263FDF1C430384A9626CC42 /* PBXContainerItemProxy */;
+		};
+		CCD8EBD87CB40E1B7838F7F2AE772C97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DDDingDingClock";
+			target = 5C46DB50072B07EE514C48A94038503B /* Pods-DDDingDingClock */;
+			targetProxy = 4F48D6772CDDFF675910F789947C9E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5C9AE5E63F0B28144CFA44B356EE602A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05C0577E1E075498596AFB20A29865B /* Pods-DDDingDingClockUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDDingDingClockUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDDingDingClockUITests/Pods-DDDingDingClockUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68BCFC37D7F5CB8BA3D3CF4820BACFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C716DC04FB03BFA8395B00FD11A1F328 /* Pods-DDDingDingClock.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDDingDingClock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDDingDingClock/Pods-DDDingDingClock.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		708839535D84A3602E34961AD6855244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB92F559B5B3488B5756F8B3CD7CCA5 /* Pods-DDDingDingClockUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDDingDingClockUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDDingDingClockUITests/Pods-DDDingDingClockUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		708C03BFDB9C59F5621BECA73CC9DB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A401A2EE4965FE55F0DB5EDF5D936 /* Pods-DDDingDingClock.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDDingDingClock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDDingDingClock/Pods-DDDingDingClock.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		918725AB39EA47867899FCBD623D06BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694A484C7F05A4A3A321A5E625027A54 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		934DB60F83889BF5753918E9A88166DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57B95C08FD748162A2D3D6E1318A892 /* Pods-DDDingDingClockTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDDingDingClockTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDDingDingClockTests/Pods-DDDingDingClockTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A35D004818BEEB3AD9BB89FF7D98172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694A484C7F05A4A3A321A5E625027A54 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB240DF620B50E1FCF4A0F3AA46C3A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9934860CE400B1A298B5F14E6192E98 /* Pods-DDDingDingClockTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDDingDingClockTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDDingDingClockTests/Pods-DDDingDingClockTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38C360F98F4AAAB77413D51CA66F2A63 /* Build configuration list for PBXNativeTarget "Pods-DDDingDingClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708C03BFDB9C59F5621BECA73CC9DB5F /* Debug */,
+				68BCFC37D7F5CB8BA3D3CF4820BACFF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4BFFCF84E7D5BCD8E8F0F1BD095406 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				918725AB39EA47867899FCBD623D06BB /* Debug */,
+				9A35D004818BEEB3AD9BB89FF7D98172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809048F622BB1C1FD0268B618A1E2266 /* Build configuration list for PBXNativeTarget "Pods-DDDingDingClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB240DF620B50E1FCF4A0F3AA46C3A90 /* Debug */,
+				934DB60F83889BF5753918E9A88166DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A398EC67D1103D73E5F15677416ED2A3 /* Build configuration list for PBXNativeTarget "Pods-DDDingDingClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708839535D84A3602E34961AD6855244 /* Debug */,
+				5C9AE5E63F0B28144CFA44B356EE602A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

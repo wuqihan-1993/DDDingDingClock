@@ -1,0 +1,20 @@
+PODS:
+  - RongCloudIM/IMLib (2.9.8)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - RongCloudIM/IMLib
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RongCloudIM
+    - SnapKit
+
+SPEC CHECKSUMS:
+  RongCloudIM: dcfa8c4fe11e992c0d187f7dda71f2ce5bfae4d1
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: a949ca3cad8dc5524f2b5ae8203409b9d3efb167
+
+COCOAPODS: 1.5.3
