@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3C7CA2021DEE63400A6101F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */; };
+		E3C7CA2221DEE63400A6101F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA2121DEE63400A6101F /* ViewController.swift */; };
+		E3C7CA2521DEE63400A6101F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C7CA2321DEE63400A6101F /* Main.storyboard */; };
+		E3C7CA2721DEE63500A6101F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C7CA2621DEE63500A6101F /* Assets.xcassets */; };
+		E3C7CA2A21DEE63500A6101F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C7CA2821DEE63500A6101F /* LaunchScreen.storyboard */; };
+		E3C7CA3521DEE63500A6101F /* DDDingDingClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA3421DEE63500A6101F /* DDDingDingClockTests.swift */; };
+		E3C7CA4021DEE63500A6101F /* DDDingDingClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA3F21DEE63500A6101F /* DDDingDingClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3C7CA3121DEE63500A6101F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3C7CA1421DEE63400A6101F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3C7CA1B21DEE63400A6101F;
+			remoteInfo = DDDingDingClock;
+		};
+		E3C7CA3C21DEE63500A6101F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3C7CA1421DEE63400A6101F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3C7CA1B21DEE63400A6101F;
+			remoteInfo = DDDingDingClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3C7CA1C21DEE63400A6101F /* DDDingDingClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDDingDingClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3C7CA2121DEE63400A6101F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3C7CA2421DEE63400A6101F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3C7CA2621DEE63500A6101F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3C7CA2921DEE63500A6101F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3C7CA2B21DEE63500A6101F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C7CA3021DEE63500A6101F /* DDDingDingClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDDingDingClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C7CA3421DEE63500A6101F /* DDDingDingClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDDingDingClockTests.swift; sourceTree = "<group>"; };
+		E3C7CA3621DEE63500A6101F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C7CA3B21DEE63500A6101F /* DDDingDingClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDDingDingClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C7CA3F21DEE63500A6101F /* DDDingDingClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDDingDingClockUITests.swift; sourceTree = "<group>"; };
+		E3C7CA4121DEE63500A6101F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3C7CA1921DEE63400A6101F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C7CA2D21DEE63500A6101F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C7CA3821DEE63500A6101F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3C7CA1321DEE63400A6101F = {
+			isa = PBXGroup;
+			children = (
+				E3C7CA1E21DEE63400A6101F /* DDDingDingClock */,
+				E3C7CA3321DEE63500A6101F /* DDDingDingClockTests */,
+				E3C7CA3E21DEE63500A6101F /* DDDingDingClockUITests */,
+				E3C7CA1D21DEE63400A6101F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3C7CA1D21DEE63400A6101F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3C7CA1C21DEE63400A6101F /* DDDingDingClock.app */,
+				E3C7CA3021DEE63500A6101F /* DDDingDingClockTests.xctest */,
+				E3C7CA3B21DEE63500A6101F /* DDDingDingClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3C7CA1E21DEE63400A6101F /* DDDingDingClock */ = {
+			isa = PBXGroup;
+			children = (
+				E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */,
+				E3C7CA2121DEE63400A6101F /* ViewController.swift */,
+				E3C7CA2321DEE63400A6101F /* Main.storyboard */,
+				E3C7CA2621DEE63500A6101F /* Assets.xcassets */,
+				E3C7CA2821DEE63500A6101F /* LaunchScreen.storyboard */,
+				E3C7CA2B21DEE63500A6101F /* Info.plist */,
+			);
+			path = DDDingDingClock;
+			sourceTree = "<group>";
+		};
+		E3C7CA3321DEE63500A6101F /* DDDingDingClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3C7CA3421DEE63500A6101F /* DDDingDingClockTests.swift */,
+				E3C7CA3621DEE63500A6101F /* Info.plist */,
+			);
+			path = DDDingDingClockTests;
+			sourceTree = "<group>";
+		};
+		E3C7CA3E21DEE63500A6101F /* DDDingDingClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3C7CA3F21DEE63500A6101F /* DDDingDingClockUITests.swift */,
+				E3C7CA4121DEE63500A6101F /* Info.plist */,
+			);
+			path = DDDingDingClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3C7CA1B21DEE63400A6101F /* DDDingDingClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C7CA4421DEE63500A6101F /* Build configuration list for PBXNativeTarget "DDDingDingClock" */;
+			buildPhases = (
+				E3C7CA1821DEE63400A6101F /* Sources */,
+				E3C7CA1921DEE63400A6101F /* Frameworks */,
+				E3C7CA1A21DEE63400A6101F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDDingDingClock;
+			productName = DDDingDingClock;
+			productReference = E3C7CA1C21DEE63400A6101F /* DDDingDingClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3C7CA2F21DEE63500A6101F /* DDDingDingClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C7CA4721DEE63500A6101F /* Build configuration list for PBXNativeTarget "DDDingDingClockTests" */;
+			buildPhases = (
+				E3C7CA2C21DEE63500A6101F /* Sources */,
+				E3C7CA2D21DEE63500A6101F /* Frameworks */,
+				E3C7CA2E21DEE63500A6101F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3C7CA3221DEE63500A6101F /* PBXTargetDependency */,
+			);
+			name = DDDingDingClockTests;
+			productName = DDDingDingClockTests;
+			productReference = E3C7CA3021DEE63500A6101F /* DDDingDingClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3C7CA3A21DEE63500A6101F /* DDDingDingClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C7CA4A21DEE63500A6101F /* Build configuration list for PBXNativeTarget "DDDingDingClockUITests" */;
+			buildPhases = (
+				E3C7CA3721DEE63500A6101F /* Sources */,
+				E3C7CA3821DEE63500A6101F /* Frameworks */,
+				E3C7CA3921DEE63500A6101F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3C7CA3D21DEE63500A6101F /* PBXTargetDependency */,
+			);
+			name = DDDingDingClockUITests;
+			productName = DDDingDingClockUITests;
+			productReference = E3C7CA3B21DEE63500A6101F /* DDDingDingClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3C7CA1421DEE63400A6101F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wuqh;
+				TargetAttributes = {
+					E3C7CA1B21DEE63400A6101F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E3C7CA2F21DEE63500A6101F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E3C7CA1B21DEE63400A6101F;
+					};
+					E3C7CA3A21DEE63500A6101F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E3C7CA1B21DEE63400A6101F;
+					};
+				};
+			};
+			buildConfigurationList = E3C7CA1721DEE63400A6101F /* Build configuration list for PBXProject "DDDingDingClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3C7CA1321DEE63400A6101F;
+			productRefGroup = E3C7CA1D21DEE63400A6101F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3C7CA1B21DEE63400A6101F /* DDDingDingClock */,
+				E3C7CA2F21DEE63500A6101F /* DDDingDingClockTests */,
+				E3C7CA3A21DEE63500A6101F /* DDDingDingClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3C7CA1A21DEE63400A6101F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C7CA2A21DEE63500A6101F /* LaunchScreen.storyboard in Resources */,
+				E3C7CA2721DEE63500A6101F /* Assets.xcassets in Resources */,
+				E3C7CA2521DEE63400A6101F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C7CA2E21DEE63500A6101F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C7CA3921DEE63500A6101F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3C7CA1821DEE63400A6101F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C7CA2221DEE63400A6101F /* ViewController.swift in Sources */,
+				E3C7CA2021DEE63400A6101F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C7CA2C21DEE63500A6101F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C7CA3521DEE63500A6101F /* DDDingDingClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C7CA3721DEE63500A6101F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C7CA4021DEE63500A6101F /* DDDingDingClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3C7CA3221DEE63500A6101F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3C7CA1B21DEE63400A6101F /* DDDingDingClock */;
+			targetProxy = E3C7CA3121DEE63500A6101F /* PBXContainerItemProxy */;
+		};
+		E3C7CA3D21DEE63500A6101F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3C7CA1B21DEE63400A6101F /* DDDingDingClock */;
+			targetProxy = E3C7CA3C21DEE63500A6101F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3C7CA2321DEE63400A6101F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C7CA2421DEE63400A6101F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3C7CA2821DEE63500A6101F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C7CA2921DEE63500A6101F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3C7CA4221DEE63500A6101F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3C7CA4321DEE63500A6101F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3C7CA4521DEE63500A6101F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDDingDingClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3C7CA4621DEE63500A6101F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDDingDingClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3C7CA4821DEE63500A6101F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDDingDingClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDDingDingClock.app/DDDingDingClock";
+			};
+			name = Debug;
+		};
+		E3C7CA4921DEE63500A6101F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDDingDingClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDDingDingClock.app/DDDingDingClock";
+			};
+			name = Release;
+		};
+		E3C7CA4B21DEE63500A6101F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDDingDingClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DDDingDingClock;
+			};
+			name = Debug;
+		};
+		E3C7CA4C21DEE63500A6101F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				INFOPLIST_FILE = DDDingDingClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DDDingDingClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3C7CA1721DEE63400A6101F /* Build configuration list for PBXProject "DDDingDingClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C7CA4221DEE63500A6101F /* Debug */,
+				E3C7CA4321DEE63500A6101F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C7CA4421DEE63500A6101F /* Build configuration list for PBXNativeTarget "DDDingDingClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C7CA4521DEE63500A6101F /* Debug */,
+				E3C7CA4621DEE63500A6101F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C7CA4721DEE63500A6101F /* Build configuration list for PBXNativeTarget "DDDingDingClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C7CA4821DEE63500A6101F /* Debug */,
+				E3C7CA4921DEE63500A6101F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C7CA4A21DEE63500A6101F /* Build configuration list for PBXNativeTarget "DDDingDingClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C7CA4B21DEE63500A6101F /* Debug */,
+				E3C7CA4C21DEE63500A6101F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3C7CA1421DEE63400A6101F /* Project object */;
+}
