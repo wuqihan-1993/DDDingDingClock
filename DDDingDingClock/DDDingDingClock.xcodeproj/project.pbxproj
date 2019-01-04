@@ -17,6 +17,7 @@
 		E3C7CA4E21DEE8C100A6101F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA4D21DEE8C100A6101F /* MainViewController.swift */; };
 		E3C7CA5121DEF02100A6101F /* HomeClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */; };
 		E3C7CA5321DEF02D00A6101F /* CompanyClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */; };
+		E3C7CA5521DF003900A6101F /* DTShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C7CA5421DF003900A6101F /* DTShareKit.framework */; };
 		F300E062C8B7CC3CA17C15C9 /* Pods_DDDingDingClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1F3D23F8907C304D5C4380 /* Pods_DDDingDingClockTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		E3C7CA4F21DEEE8200A6101F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClockViewController.swift; sourceTree = "<group>"; };
 		E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyClockViewController.swift; sourceTree = "<group>"; };
+		E3C7CA5421DF003900A6101F /* DTShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTShareKit.framework; sourceTree = "<group>"; };
 		F288BA84CFE0927E1D61D7EF /* Pods-DDDingDingClockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDingDingClockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDDingDingClockUITests/Pods-DDDingDingClockUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5052661AA96A8E1563875EAE /* Pods_DDDingDingClock.framework in Frameworks */,
+				E3C7CA5521DF003900A6101F /* DTShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +143,7 @@
 		E3C7CA1E21DEE63400A6101F /* DDDingDingClock */ = {
 			isa = PBXGroup;
 			children = (
+				E3C7CA5421DF003900A6101F /* DTShareKit.framework */,
 				E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */,
 				E3C7CA4D21DEE8C100A6101F /* MainViewController.swift */,
 				E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */,
@@ -591,10 +595,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DDDingDingClock",
+				);
 				INFOPLIST_FILE = DDDingDingClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"opencore-amrnb\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"RongIMLib\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -611,10 +632,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5E3A9G5UU5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DDDingDingClock",
+				);
 				INFOPLIST_FILE = DDDingDingClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"opencore-amrnb\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"RongIMLib\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuqh.DDDingDingClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";

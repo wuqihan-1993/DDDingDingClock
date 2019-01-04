@@ -10,5 +10,6 @@
 #define Bridging_Header_h
 
 #import <RongIMLib/RongIMLib.h>
+#import <DTShareKit/DTOpenKit.h>
 
 #endif /* Bridging_Header_h */
