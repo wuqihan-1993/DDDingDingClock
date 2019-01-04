@@ -14,6 +14,7 @@ class HomeClockViewController: UIViewController {
         let clockButton = UIButton(type: .custom)
         clockButton.setTitle("现在就立即打卡~", for: .normal)
         clockButton.addTarget(self, action: #selector(clockButtonClick), for: .touchUpInside)
+        clockButton.setTitleColor(UIColor.red, for: .normal)
         return clockButton
     }()
 
@@ -22,12 +23,16 @@ class HomeClockViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
-        
+        title = "立即打卡"
+        view.addSubview(clockButton)
+        clockButton.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+        }
     }
     
     @objc private func clockButtonClick() {
         let message = RCTextMessage(content: "打卡喽")
-        RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: "BNQt/yE+6EV2zV6tYbhwhMxLFy44qvJmbbEHga/UUOKJ6FalfhCiPi6sMyOPySorl2AU/wLf9BD8DcLn+b4AnQ==", content: message, pushContent: nil, pushData: nil, success: { (messageId) in
+        RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: "test2", content: message, pushContent: nil, pushData: nil, success: { (messageId) in
             print("打卡成功喽")
         }, error: { (errorCode, messageId) in
             print("打卡失败了")

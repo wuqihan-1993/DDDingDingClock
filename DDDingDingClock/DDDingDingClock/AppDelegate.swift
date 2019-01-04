@@ -8,6 +8,10 @@
 
 import UIKit
 
+let HomeToken = "YiA05Wb06cLqp+Hk0SxcmcxLFy44qvJmbbEHga/UUOKJ6FalfhCiPo9sgToSE9tmqg/zLR84H4Da8ulYbbtixA=="
+let CompanyToken = "kWHW85VChkCO/6B+Gk4hfcxLFy44qvJmbbEHga/UUOKJ6FalfhCiPk3IriBzEZndqg/zLR84H4DCAaVhypMJ1A=="
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,17 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIApplication.shared.isIdleTimerDisabled = true
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = UINavigationController(rootViewController: MainViewController())
+        window?.rootViewController = TabBarViewController()
         window?.makeKeyAndVisible()
-        
+
         RCIMClient.shared()?.initWithAppKey("vnroth0kvbffo")
-        DTOpenAPI.registerApp("dingoapxdbrrp1w3gpqguu")
+        
         return true
     }
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return DTOpenAPI.handleOpen(url, delegate: self)
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        RCIMClient.shared()?.logout()
     }
 
 }

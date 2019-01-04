@@ -18,6 +18,10 @@
 		E3C7CA5121DEF02100A6101F /* HomeClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */; };
 		E3C7CA5321DEF02D00A6101F /* CompanyClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */; };
 		E3C7CA5521DF003900A6101F /* DTShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C7CA5421DF003900A6101F /* DTShareKit.framework */; };
+		E3C7CA5721DF424D00A6101F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5621DF424D00A6101F /* TabBarViewController.swift */; };
+		E3C7CA5921DF429400A6101F /* AutoClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5821DF429400A6101F /* AutoClockViewController.swift */; };
+		E3C7CA5B21DF42B000A6101F /* ManualClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA5A21DF42B000A6101F /* ManualClockViewController.swift */; };
+		E3C7CA6221DF5B0000A6101F /* RecordClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA6121DF5B0000A6101F /* RecordClockViewController.swift */; };
 		F300E062C8B7CC3CA17C15C9 /* Pods_DDDingDingClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1F3D23F8907C304D5C4380 /* Pods_DDDingDingClockTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,10 @@
 		E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClockViewController.swift; sourceTree = "<group>"; };
 		E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyClockViewController.swift; sourceTree = "<group>"; };
 		E3C7CA5421DF003900A6101F /* DTShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DTShareKit.framework; sourceTree = "<group>"; };
+		E3C7CA5621DF424D00A6101F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E3C7CA5821DF429400A6101F /* AutoClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoClockViewController.swift; sourceTree = "<group>"; };
+		E3C7CA5A21DF42B000A6101F /* ManualClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualClockViewController.swift; sourceTree = "<group>"; };
+		E3C7CA6121DF5B0000A6101F /* RecordClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordClockViewController.swift; sourceTree = "<group>"; };
 		F288BA84CFE0927E1D61D7EF /* Pods-DDDingDingClockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDingDingClockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDDingDingClockUITests/Pods-DDDingDingClockUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,8 +154,7 @@
 				E3C7CA5421DF003900A6101F /* DTShareKit.framework */,
 				E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */,
 				E3C7CA4D21DEE8C100A6101F /* MainViewController.swift */,
-				E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */,
-				E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */,
+				E3C7CA5C21DF42BA00A6101F /* ViewController */,
 				E3C7CA2621DEE63500A6101F /* Assets.xcassets */,
 				E3C7CA2821DEE63500A6101F /* LaunchScreen.storyboard */,
 				E3C7CA2B21DEE63500A6101F /* Info.plist */,
@@ -172,6 +179,19 @@
 				E3C7CA4121DEE63500A6101F /* Info.plist */,
 			);
 			path = DDDingDingClockUITests;
+			sourceTree = "<group>";
+		};
+		E3C7CA5C21DF42BA00A6101F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3C7CA5621DF424D00A6101F /* TabBarViewController.swift */,
+				E3C7CA5A21DF42B000A6101F /* ManualClockViewController.swift */,
+				E3C7CA5821DF429400A6101F /* AutoClockViewController.swift */,
+				E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */,
+				E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */,
+				E3C7CA6121DF5B0000A6101F /* RecordClockViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,9 +442,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C7CA5B21DF42B000A6101F /* ManualClockViewController.swift in Sources */,
 				E3C7CA2021DEE63400A6101F /* AppDelegate.swift in Sources */,
 				E3C7CA4E21DEE8C100A6101F /* MainViewController.swift in Sources */,
 				E3C7CA5321DEF02D00A6101F /* CompanyClockViewController.swift in Sources */,
+				E3C7CA6221DF5B0000A6101F /* RecordClockViewController.swift in Sources */,
+				E3C7CA5721DF424D00A6101F /* TabBarViewController.swift in Sources */,
+				E3C7CA5921DF429400A6101F /* AutoClockViewController.swift in Sources */,
 				E3C7CA5121DEF02100A6101F /* HomeClockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -578,7 +602,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -600,6 +624,7 @@
 					"$(PROJECT_DIR)/DDDingDingClock",
 				);
 				INFOPLIST_FILE = DDDingDingClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +662,7 @@
 					"$(PROJECT_DIR)/DDDingDingClock",
 				);
 				INFOPLIST_FILE = DDDingDingClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
