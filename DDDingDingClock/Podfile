@@ -7,6 +7,8 @@ target 'DDDingDingClock' do
 
   # Pods for DDDingDingClock
   pod 'SnapKit'
+  pod 'Alamofire'
+  pod 'Alamofire-SwiftyJSON'
   pod 'RongCloudIM/IMLib'
 
   target 'DDDingDingClockTests' do

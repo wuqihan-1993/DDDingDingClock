@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class HomeClockViewController: UIViewController {
     
     private lazy var clockButton: UIButton = {
@@ -32,7 +32,7 @@ class HomeClockViewController: UIViewController {
     
     @objc private func clockButtonClick() {
         let message = RCTextMessage(content: "打卡喽")
-        RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: "test2", content: message, pushContent: nil, pushData: nil, success: { (messageId) in
+        RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: "test", content: message, pushContent: nil, pushData: nil, success: { (messageId) in
             print("打卡成功喽")
         }, error: { (errorCode, messageId) in
             print("打卡失败了")

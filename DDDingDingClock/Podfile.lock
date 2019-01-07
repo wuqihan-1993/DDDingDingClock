@@ -1,20 +1,33 @@
 PODS:
+  - Alamofire (4.8.0)
+  - Alamofire-SwiftyJSON (3.0.0):
+    - Alamofire (~> 4.5)
+    - SwiftyJSON (~> 4.0.0)
   - RongCloudIM/IMLib (2.9.8)
   - SnapKit (4.2.0)
+  - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - Alamofire-SwiftyJSON
   - RongCloudIM/IMLib
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Alamofire-SwiftyJSON
     - RongCloudIM
     - SnapKit
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Alamofire-SwiftyJSON: 2b3649d57dc7bb2880fb8b86f8bb969397666916
   RongCloudIM: dcfa8c4fe11e992c0d187f7dda71f2ce5bfae4d1
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: a949ca3cad8dc5524f2b5ae8203409b9d3efb167
+PODFILE CHECKSUM: ef8574445b10b04755f1690eea857220e5654df7
 
 COCOAPODS: 1.5.3

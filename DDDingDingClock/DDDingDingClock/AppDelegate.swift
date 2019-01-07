@@ -8,7 +8,10 @@
 
 import UIKit
 
+let homeUid = "test1"
 let HomeToken = "YiA05Wb06cLqp+Hk0SxcmcxLFy44qvJmbbEHga/UUOKJ6FalfhCiPo9sgToSE9tmqg/zLR84H4Da8ulYbbtixA=="
+
+let CompanyUid = "test2"
 let CompanyToken = "kWHW85VChkCO/6B+Gk4hfcxLFy44qvJmbbEHga/UUOKJ6FalfhCiPk3IriBzEZndqg/zLR84H4DCAaVhypMJ1A=="
 
 

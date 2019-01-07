@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import CommonCrypto
 
 class ManualClockViewController: UIViewController {
     
@@ -60,56 +62,90 @@ extension ManualClockViewController: UITableViewDataSource,UITableViewDelegate {
 extension ManualClockViewController {
     private func connectHome() {
         
-        RCIMClient.shared()?.logout()
-        
         let alert = UIAlertController(title: "登录", message: "如有问题联系qq:651076554", preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.placeholder = "请输入您的token"
+            textField.placeholder = "请输入您的用户名（无需注册）"
         }
         let cancelAction = UIAlertAction(title: "取消", style: .cancel) { (action) in
             
         }
         let okAction = UIAlertAction(title: "确定", style: .default) {[weak self] (action) in
-            //登录 链接融云
-            RCIMClient.shared()?.connect(withToken: HomeToken, success: { (userId) in
-                DispatchQueue.main.async {
-                    self?.navigationController?.pushViewController(HomeClockViewController(), animated: true)
+            guard let userName = alert.textFields?.first?.text else{
+                return
+            }
+            
+            IMManager.shared.getToken(userName: userName, success: { (data) in
+                
+                guard let token = data["token"].string else{
+                    return
                 }
-            }, error: { (errorCode) in
-                print("\(errorCode)")
-            }, tokenIncorrect: {
-                print("过期或token无效")
+                //登录 链接融云
+                RCIMClient.shared()?.connect(withToken: token, success: { (userId) in
+                    DispatchQueue.main.async {
+                        self?.navigationController?.pushViewController(HomeClockViewController(), animated: true)
+                    }
+                }, error: { (errorCode) in
+                    print("\(errorCode)")
+                }, tokenIncorrect: {
+                    print("过期或token无效")
+                })
+                
+                
+            }, failure: { (error) in
+                
             })
+            
+            
         }
         alert.addAction(cancelAction)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
     private func connectCompany() {
-        RCIMClient.shared()?.logout()
         
+        
+
         let alert = UIAlertController(title: "登录", message: "如有问题联系qq:651076554", preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.placeholder = "请输入您的token"
+            textField.placeholder = "请输入您的用户名（无需注册）"
         }
         let cancelAction = UIAlertAction(title: "取消", style: .cancel) { (action) in
-            
+
         }
         let okAction = UIAlertAction(title: "确定", style: .default) {[weak self] (action) in
-            //登录 链接融云
-            RCIMClient.shared()?.connect(withToken: CompanyToken, success: { (userId) in
-                DispatchQueue.main.async {
-                    
-                    self?.present(UINavigationController(rootViewController: CompanyClockViewController()), animated: true, completion: nil)
+            guard let userName = alert.textFields?.first?.text else{
+                return
+            }
+            
+            IMManager.shared.getToken(userName: userName, success: { (data) in
+                
+                guard let token = data["token"].string else{
+                    return
                 }
-            }, error: { (errorCode) in
-                print("\(errorCode)")
-            }, tokenIncorrect: {
-                print("过期或token无效")
+                //登录 链接融云
+                RCIMClient.shared()?.connect(withToken: token, success: { (userId) in
+                    DispatchQueue.main.async {
+                        
+                        self?.present(UINavigationController(rootViewController: CompanyClockViewController()), animated: true, completion: nil)
+                    }
+                }, error: { (errorCode) in
+                    print("\(errorCode)")
+                }, tokenIncorrect: {
+                    print("过期或token无效")
+                })
+                
+                
+            }, failure: { (error) in
+                
             })
+            
+            
         }
         alert.addAction(cancelAction)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
+        
     }
 }
+
+
