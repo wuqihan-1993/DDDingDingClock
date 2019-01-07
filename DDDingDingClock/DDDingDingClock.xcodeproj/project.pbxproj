@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B708A8B85C49915B5D115D9 /* Pods_DDDingDingClockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D056AB73B9A4261300A9C9 /* Pods_DDDingDingClockUITests.framework */; };
 		5052661AA96A8E1563875EAE /* Pods_DDDingDingClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B619DB57404D488836B97B3F /* Pods_DDDingDingClock.framework */; };
+		E385C19521E2E68A0019E0B1 /* ViewController+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385C19421E2E68A0019E0B1 /* ViewController+HUD.swift */; };
 		E3C7CA2021DEE63400A6101F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */; };
 		E3C7CA2721DEE63500A6101F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C7CA2621DEE63500A6101F /* Assets.xcassets */; };
 		E3C7CA2A21DEE63500A6101F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C7CA2821DEE63500A6101F /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 		B619DB57404D488836B97B3F /* Pods_DDDingDingClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDDingDingClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A7220C724A4A910A6D50C0 /* Pods-DDDingDingClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDingDingClockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDDingDingClockTests/Pods-DDDingDingClockTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E26C9EF3F5DC1E994A3BDC09 /* Pods-DDDingDingClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDDingDingClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDDingDingClock/Pods-DDDingDingClock.debug.xcconfig"; sourceTree = "<group>"; };
+		E385C19421E2E68A0019E0B1 /* ViewController+HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+HUD.swift"; sourceTree = "<group>"; };
 		E3C7CA1C21DEE63400A6101F /* DDDingDingClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDDingDingClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C7CA1F21DEE63400A6101F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3C7CA2621DEE63500A6101F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				E3C7CA5021DEF02100A6101F /* HomeClockViewController.swift */,
 				E3C7CA5221DEF02D00A6101F /* CompanyClockViewController.swift */,
 				E3C7CA6121DF5B0000A6101F /* RecordClockViewController.swift */,
+				E385C19421E2E68A0019E0B1 /* ViewController+HUD.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DDDingDingClock/Pods-DDDingDingClock-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -378,6 +382,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -459,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E385C19521E2E68A0019E0B1 /* ViewController+HUD.swift in Sources */,
 				E3C7CA6721DF708400A6101F /* String+Extensions.swift in Sources */,
 				E3C7CA5B21DF42B000A6101F /* ManualClockViewController.swift in Sources */,
 				E3C7CA2021DEE63400A6101F /* AppDelegate.swift in Sources */,

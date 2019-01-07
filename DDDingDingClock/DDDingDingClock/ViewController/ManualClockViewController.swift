@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import CommonCrypto
+import NVActivityIndicatorView
 
 class ManualClockViewController: UIViewController {
     
@@ -74,24 +75,29 @@ extension ManualClockViewController {
                 return
             }
             
+            self?.showHud()
             IMManager.shared.getToken(userName: userName, success: { (data) in
                 
                 guard let token = data["token"].string else{
+                    self?.showErrorHUD(message: "获取token失败")
                     return
                 }
                 //登录 链接融云
                 RCIMClient.shared()?.connect(withToken: token, success: { (userId) in
                     DispatchQueue.main.async {
+                        self?.dismissHUD()
                         self?.navigationController?.pushViewController(HomeClockViewController(), animated: true)
                     }
                 }, error: { (errorCode) in
-                    print("\(errorCode)")
+                    self?.showErrorHUD(message: "errorCode:\(errorCode)")
                 }, tokenIncorrect: {
-                    print("过期或token无效")
+                    self?.showErrorHUD(message: "token过期或无效...")
                 })
                 
                 
             }, failure: { (error) in
+                
+                self?.showErrorHUD(message: error.localizedDescription)
                 
             })
             
@@ -116,27 +122,30 @@ extension ManualClockViewController {
             guard let userName = alert.textFields?.first?.text else{
                 return
             }
-            
+            self?.showHud()
             IMManager.shared.getToken(userName: userName, success: { (data) in
                 
                 guard let token = data["token"].string else{
+                    self?.showErrorHUD(message: "获取token失败")
                     return
                 }
                 //登录 链接融云
                 RCIMClient.shared()?.connect(withToken: token, success: { (userId) in
                     DispatchQueue.main.async {
-                        
-                        self?.present(UINavigationController(rootViewController: CompanyClockViewController()), animated: true, completion: nil)
+                        self?.dismissHUD()
+                        let vc = CompanyClockViewController()
+                        vc.companyId = token
+                        self?.present(UINavigationController(rootViewController: vc), animated: true, completion: nil)
                     }
                 }, error: { (errorCode) in
-                    print("\(errorCode)")
+                    self?.showErrorHUD(message: "errorCode:\(errorCode)")
                 }, tokenIncorrect: {
-                    print("过期或token无效")
+                    self?.showErrorHUD(message: "token过期或无效...")
                 })
                 
                 
             }, failure: { (error) in
-                
+                self?.showErrorHUD(message: error.localizedDescription)
             })
             
             

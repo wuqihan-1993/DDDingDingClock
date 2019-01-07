@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import NVActivityIndicatorView
+
 class HomeClockViewController: UIViewController {
     
     private lazy var clockButton: UIButton = {
@@ -31,12 +33,29 @@ class HomeClockViewController: UIViewController {
     }
     
     @objc private func clockButtonClick() {
-        let message = RCTextMessage(content: "打卡喽")
-        RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: "test", content: message, pushContent: nil, pushData: nil, success: { (messageId) in
-            print("打卡成功喽")
-        }, error: { (errorCode, messageId) in
-            print("打卡失败了")
-        })
+        
+        let alert = UIAlertController(title:"即将打卡", message: "请输入要接收打卡指令的userId", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "确定", style: .default) { (_) in
+            
+            guard let targetId = alert.textFields?.first?.text else{
+                return
+            }
+            let message = RCTextMessage(content: "打卡喽")
+            RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: targetId, content: message, pushContent: nil, pushData: nil, success: { (messageId) in
+                print("打卡成功喽")
+            }, error: { (errorCode, messageId) in
+                print("打卡失败了")
+            })
+            
+        }
+        alert.addTextField { (textfiled) in
+            textfiled.placeholder = "请输入要接收打卡指令的userId"
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+        
     }
     
 

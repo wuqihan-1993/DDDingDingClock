@@ -11,6 +11,8 @@ import Alamofire
 
 class CompanyClockViewController: UIViewController {
     
+    var companyId: String?
+    
     private lazy var label: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -20,6 +22,31 @@ class CompanyClockViewController: UIViewController {
     }()
 
     private var lastBrightness: CGFloat = 0
+    
+    private var checkOpenDingButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitle("点击测试是否可以正常打卡钉钉", for: .normal)
+        button.setTitle("你尚未安装钉钉", for: .selected)
+        if DTOpenAPI.isDingTalkSupport() && DTOpenAPI.isDingTalkInstalled() {
+            button.isSelected = false
+            button.backgroundColor = UIColor.blue
+        }else {
+            button.isSelected = true
+            button.backgroundColor = UIColor.red
+        }
+        button.addTarget(self, action: #selector(checkOpenDing), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var connectSatusLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = UIColor.blue
+        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textAlignment = .center
+        label.text = "连接成功"
+        return label
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +67,23 @@ class CompanyClockViewController: UIViewController {
             make.right.equalToSuperview().offset(-60)
         }
         
+        view.addSubview(checkOpenDingButton)
+        checkOpenDingButton.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(88)
+            make.left.right.equalToSuperview()
+            make.height.equalTo(44)
+        }
+        view.addSubview(connectSatusLabel)
+        connectSatusLabel.snp.makeConstraints { (make) in
+            make.bottom.equalToSuperview()
+            make.left.right.equalToSuperview()
+            make.height.equalTo(49)
+        }
+        
         RCIMClient.shared()?.setReceiveMessageDelegate(self, object: nil)
+        RCIMClient.shared()?.setRCConnectionStatusChangeDelegate(self)
+        //检测是否安装钉钉
+        
         
 
     }
@@ -68,17 +111,43 @@ class CompanyClockViewController: UIViewController {
         }
         
     }
+    @objc private func checkOpenDing() {
+        DTOpenAPI.openDingTalk()
+    }
 
 }
 
 extension CompanyClockViewController: RCIMClientReceiveMessageDelegate {
     func onReceived(_ message: RCMessage!, left nLeft: Int32, object: Any!) {
         
-        if DTOpenAPI.openDingTalk() {
-            print("打开钉钉成功")
+        DispatchQueue.main.async {
+            if DTOpenAPI.openDingTalk() {
+                print("打开钉钉成功")
+                
+            }else {
+                print("打开钉钉失败了")
+            }
+        }
+        
+    }
+}
+
+extension CompanyClockViewController: RCConnectionStatusChangeDelegate {
+    func onConnectionStatusChanged(_ status: RCConnectionStatus) {
+        if status == RCConnectionStatus.ConnectionStatus_KICKED_OFFLINE_BY_OTHER_CLIENT {
+            RCIMClient.shared()?.connect(withToken: companyId, success: { (_) in
+                print("success")
+            }, error: { (_) in
+                print("error")
+            }, tokenIncorrect: {
+                print("token")
+            })
             
+        }
+        if status == RCConnectionStatus.ConnectionStatus_Connected {
+            connectSatusLabel.text = "连接成功"
         }else {
-            print("打开钉钉失败了")
+            connectSatusLabel.text = "断开连接"
         }
     }
 }

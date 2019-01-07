@@ -10,6 +10,7 @@ target 'DDDingDingClock' do
   pod 'Alamofire'
   pod 'Alamofire-SwiftyJSON'
   pod 'RongCloudIM/IMLib'
+  pod 'NVActivityIndicatorView'
 
   target 'DDDingDingClockTests' do
     inherit! :search_paths
