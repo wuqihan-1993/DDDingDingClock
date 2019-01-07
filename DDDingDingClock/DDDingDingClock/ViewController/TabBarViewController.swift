@@ -22,7 +22,7 @@ class TabBarViewController: UITabBarController {
         addChild(UINavigationController(rootViewController: autoClockVc))
         
         let recordClockVc = RecordClockViewController()
-        recordClockVc.title = "打开记录"
+        recordClockVc.title = "打卡记录"
         addChild(UINavigationController(rootViewController: recordClockVc))
         
         
