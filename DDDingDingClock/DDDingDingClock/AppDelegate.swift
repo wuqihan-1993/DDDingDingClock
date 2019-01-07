@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         RCIMClient.shared()?.initWithAppKey("vnroth0kvbffo")
-        
         return true
     }
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {

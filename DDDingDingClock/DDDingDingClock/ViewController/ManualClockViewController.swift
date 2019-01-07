@@ -31,6 +31,11 @@ class ManualClockViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        RCIMClient.shared()?.logout()
+    }
+    
 }
 extension ManualClockViewController: UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -63,49 +68,41 @@ extension ManualClockViewController: UITableViewDataSource,UITableViewDelegate {
 extension ManualClockViewController {
     private func connectHome() {
         
-        let alert = UIAlertController(title: "登录", message: "如有问题联系qq:651076554", preferredStyle: .alert)
-        alert.addTextField { (textField) in
-            textField.placeholder = "请输入您的用户名（无需注册）"
-        }
-        let cancelAction = UIAlertAction(title: "取消", style: .cancel) { (action) in
+        showHud()
+        //这里随机分配一个可以登陆的token
+        let randomId = Int.random(in: 1000..<9999)
+        IMManager.shared.getToken(userName: String(randomId), success: { (data) in
             
-        }
-        let okAction = UIAlertAction(title: "确定", style: .default) {[weak self] (action) in
-            guard let userName = alert.textFields?.first?.text else{
+            guard let token = data["token"].string else{
+                self.showErrorHUD(message: "获取token失败")
                 return
             }
-            
-            self?.showHud()
-            IMManager.shared.getToken(userName: userName, success: { (data) in
-                
-                guard let token = data["token"].string else{
-                    self?.showErrorHUD(message: "获取token失败")
-                    return
+            //登录 链接融云
+            RCIMClient.shared()?.connect(withToken: token, success: { (userId) in
+                DispatchQueue.main.async {
+                    self.dismissHUD()
+                    self.navigationController?.pushViewController(HomeClockViewController(), animated: true)
                 }
-                //登录 链接融云
-                RCIMClient.shared()?.connect(withToken: token, success: { (userId) in
+            }, error: { (errorCode) in
+                if errorCode.rawValue == 31006 {
                     DispatchQueue.main.async {
-                        self?.dismissHUD()
-                        self?.navigationController?.pushViewController(HomeClockViewController(), animated: true)
+                        self.dismissHUD()
+                        self.navigationController?.pushViewController(HomeClockViewController(), animated: true)
                     }
-                }, error: { (errorCode) in
-                    self?.showErrorHUD(message: "errorCode:\(errorCode)")
-                }, tokenIncorrect: {
-                    self?.showErrorHUD(message: "token过期或无效...")
-                })
+                }else {
+                    self.showErrorHUD(message: "errorCode:\(errorCode)")
+                }
                 
-                
-            }, failure: { (error) in
-                
-                self?.showErrorHUD(message: error.localizedDescription)
-                
+            }, tokenIncorrect: {
+                self.showErrorHUD(message: "token过期或无效...")
             })
             
             
-        }
-        alert.addAction(cancelAction)
-        alert.addAction(okAction)
-        present(alert, animated: true, completion: nil)
+        }, failure: { (error) in
+            
+            self.showErrorHUD(message: error.localizedDescription)
+            
+        })
     }
     private func connectCompany() {
         
