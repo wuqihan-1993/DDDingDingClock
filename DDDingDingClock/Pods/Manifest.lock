@@ -8,6 +8,7 @@ PODS:
   - NVActivityIndicatorView/Presenter (4.4.1)
   - RongCloudIM/IMLib (2.9.8)
   - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - RongCloudIM/IMLib
   - SnapKit
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - RongCloudIM
     - SnapKit
+    - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -32,8 +35,9 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
   RongCloudIM: dcfa8c4fe11e992c0d187f7dda71f2ce5bfae4d1
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 091964eaf9ede77f1cb86330fcd6d628663e6e7a
+PODFILE CHECKSUM: bbc0e86e840557ab00fb0ff6450e66e9bf09bd9b
 
 COCOAPODS: 1.5.3

@@ -42,6 +42,20 @@ class IMManager: NSObject {
         }
         
     }
+    
+    func checkOnline(userId: String, success:((JSON)->Void)?, failure:((Error)->Void)?) {
+        let url = URL(string: "http://api-cn.ronghub.com/user/checkOnline.json")!
+        let parameters: Parameters = ["userId":userId];
+        
+        Alamofire.request(url, method: .post, parameters: parameters, headers: headers).responseSwiftyJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                success?(value)
+            case .failure(let error):
+                failure?(error)
+            }
+        }
+    }
 }
 
 

@@ -122,10 +122,21 @@ extension CompanyClockViewController: RCIMClientReceiveMessageDelegate {
         
         DispatchQueue.main.async {
             if DTOpenAPI.openDingTalk() {
-                print("打开钉钉成功")
+                
+                let successMessage = RCTextMessage(content: "DingSuccess")
+                RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: message.senderUserId, content: successMessage, pushContent: nil, pushData: nil, success: { (messageId) in
+                    
+                }, error: { (errorCode, messageId) in
+                   
+                })
                 
             }else {
-                print("打开钉钉失败了")
+                let successMessage = RCTextMessage(content: "DingFail")
+                RCIMClient.shared()?.sendMessage(.ConversationType_PRIVATE, targetId: message.senderUserId, content: successMessage, pushContent: nil, pushData: nil, success: { (messageId) in
+                    
+                }, error: { (errorCode, messageId) in
+                    
+                })
             }
         }
         
