@@ -10,6 +10,9 @@ import UIKit
 import Alamofire
 import CommonCrypto
 import NVActivityIndicatorView
+import CoreTelephony
+
+
 
 class ManualClockViewController: UIViewController {
     
@@ -70,7 +73,7 @@ extension ManualClockViewController {
         
         showHud()
         //这里随机分配一个可以登陆的token
-        let randomId = Int.random(in: 1000..<9999)
+        let randomId = Int.random(in: 1000..<1050)
         IMManager.shared.getToken(userName: String(randomId), success: { (data) in
             
             guard let token = data["token"].string else{

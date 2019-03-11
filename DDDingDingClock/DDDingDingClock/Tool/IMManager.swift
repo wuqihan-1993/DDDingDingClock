@@ -19,7 +19,7 @@ class IMManager: NSObject {
     static let `shared` = IMManager()
     
     var headers: HTTPHeaders {
-        let nonce = String(Int.random(in: 1000000000..<9999999999))
+        let nonce = String(Int64.random(in: 1000000000..<9999999999))
         let timestamp = String(Int(Date().timeIntervalSince1970))
         let signature = (IMManager.appSecret + nonce + timestamp).sha1()
         let headers: HTTPHeaders = ["App-Key":IMManager.appKey,"Nonce":nonce,"Timestamp":timestamp,"Signature":signature]

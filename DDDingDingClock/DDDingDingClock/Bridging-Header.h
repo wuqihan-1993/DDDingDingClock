@@ -11,5 +11,6 @@
 
 #import <RongIMLib/RongIMLib.h>
 #import <DTShareKit/DTOpenKit.h>
+#import "Mobile.h"
 
 #endif /* Bridging_Header_h */
